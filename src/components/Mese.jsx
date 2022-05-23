@@ -1,8 +1,9 @@
 import React from 'react'
+import Giorno from './Giorno'
 
 const Mese = () => {
   return (
-    <div>Mese</div>
+    <Giorno />
   )
 }
 
