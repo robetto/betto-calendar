@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { format } from 'date-fns'
 
-const Giorno = () => {
+
+const Giorno = ({ dataTimestamp }) => {
+  
+  const dateObject = new Date(dataTimestamp); 
   return (
-    <div>Giorno</div>
-  )
-}
+    <div className="giorno_wrapper">giorno: {format(dateObject, 'dd/MM/yyyy')} </div>
+  );
+};
 
-export default Giorno
+export default Giorno;

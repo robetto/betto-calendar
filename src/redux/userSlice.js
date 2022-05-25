@@ -3,7 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   darkMode: false,
   interfaccia: "mese",
-  modalVisible: false
+  modalVisible: false,
+  dataSelezionata: new Date()
 };
 
 export const userSlice = createSlice({

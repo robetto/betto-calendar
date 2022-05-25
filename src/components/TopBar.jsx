@@ -21,6 +21,8 @@ const TopBar = () => {
 
   const isVisible = useSelector((state) => state.user.modalVisible); 
 
+  const dataSelezionata = useSelector((state) => state.user.dataSelezionata); 
+
   const dispatch = useDispatch();
 
   return (
